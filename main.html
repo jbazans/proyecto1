@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Principal</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		html,body{
+			background: #eee;
+			margin: 0px;
+			font-family: sans-serif;
+		}
+		.menu-class{
+			width: 100%;
+			height: 40px;
+			background: #666;
+			color: white;
+			display: flex;
+		}
+		.title-content{
+			width: calc(100% - 70px);
+			padding: 10px;
+		}
+		.menu-content{
+			width: calc(50px - 10px);
+			padding: 5px;
+		}
+		.icon-class{
+			font-size: 28px;
+			text-align: center;
+		}
+		.content-class{
+			width: 100%;
+			height: calc(100vh - 40px);
+			position: relative;
+		}
+		.main-content{
+			padding: 10px;
+			width: calc(100% - 20px);
+			position: relative;
+		}
+		.menu-main-content{
+			width: 160px;
+			background: #bbb;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+		.menu-item{
+			padding: 10px;
+			width: calc(100% - 20px);
+			cursor: pointer;
+		}
+		.menu-item:hover{
+			background: #999;
+			color: white;
+		}
+		.title{
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu-class">
+		<div class="title-content">Web Prueba</div>
+		<div class="menu-content">
+			<div class="icon-class" onclick="show_menu()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</div>
+	</div>
+	<div class="content-class">
+		<div class="main-content">
+			<div class="title">Bienvenido</div>
+		</div>
+		<div class="menu-main-content" id="menu-main" style="display: none;">
+			<div class="menu-item">Inicio</div>
+			<div class="menu-item">Favoritos</div>
+			<div class="menu-item">Reportes</div>
+			<div class="menu-item">Salir</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function show_menu(){
+			if (document.getElementById("menu-main").style.display=="block") {
+				document.getElementById("menu-main").style.display="none";
+			}else{
+				document.getElementById("menu-main").style.display="block";
+			}
+		}
+	</script>
+</body>
+</html>

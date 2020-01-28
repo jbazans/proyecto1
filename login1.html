@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login 1</title>
+	<style type="text/css">
+		html,body{
+			margin: 50px;
+			background: #666;
+			font-family: sans-serif;
+			font-size: 13px;
+		}
+		.form-class{
+			margin-left: auto;
+			margin-right: auto;
+			background: white;
+			padding: 20px;
+			width: calc(300px - 40px);
+			border-radius: 10px;
+		}
+		.label-class{
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		.input-class{
+			margin-bottom: 10px;
+			padding: 5px;
+			width: calc(100% - 12px);
+		}
+		.button-class{
+			width: 100%;
+			padding: 10px;
+			background: #666;
+			border-style: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<form class="form-class" action="servicios/login1.php" method="get">
+		<div class="label-class">User</div>
+		<input type="text" name="user" class="input-class">
+		<div class="label-class">Password</div>
+		<input type="password" name="password" class="input-class">
+		<br>
+		<input type="submit" value="Ingresar" class="button-class">
+	</form>
+</body>
+</html>
